@@ -6,14 +6,14 @@
         <th>Orbit Type</th>
         <th>Launch Date</th>
     </tr>
-    <tr class="data-row">
-        <app-orbit-list *ngFor = "let displayList of satellite"></app-orbit-list>
-        <td>{{satellite.name}} </td>
-        <td>{{satellite.type}}</td>
-        <td>{{satellite.operational}}</td>
-        <td>{{satellite.orbitType}}</td>
-        <td>{{satelite.launchDate}}</td>
+    <tr class="data-row" *ngFor = "let displayList of satellites">
+        <td>{{displayList.name}}</td>
+        <td>{{displayList.type}}</td>
+        <td>{{displayList.operational}}</td>
+        <td>{{displayList.orbitType}}</td>
+        <td>{{displayList.launchDate}}</td>
     </tr>
+
 </table>
 
 <!-- TODO 2b: use *ngFor to display satellite data in the table -->
