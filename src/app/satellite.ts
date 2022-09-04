@@ -15,6 +15,7 @@ export class Satellite {
    }
 	
 	isSpaceDebris(): boolean {
+		
 		return true;
    }
 
