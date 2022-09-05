@@ -15,7 +15,7 @@ export class Satellite {
    }
 	
 	isSpaceDebris(): boolean {
-		if(this.orbitType === 'SpaceDebris') {
+		if(this.type === 'Space Debris') {
 			return true;
 		} else {
 			return false;
