@@ -10,7 +10,7 @@
         <td>{{displayList.name}}</td>
         <td>{{displayList.type}}</td>
         <td>{{displayList.operational}}</td>
-        <td>{{displayList.orbitType}}</td>
+        <td class.style="warning" *ngIf = "let isSpaceDebris() === true"> {{displayList.orbitType}}</td>
         <td>{{displayList.launchDate}}</td>
     </tr>
 
