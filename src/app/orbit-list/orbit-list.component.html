@@ -8,7 +8,7 @@
     </tr>
     <tr class="data-row" *ngFor = "let displayList of satellites">
         <td>{{displayList.name}}</td>
-        <td class="warning">{{displayList.type}}</td>
+        <td [class.warning = "warning"] *ngIf = "isSpaceDebris() === true">{{displayList.type}}</td>
         <td>{{displayList.operational}}</td>
         <td>{{displayList.orbitType}}</td>
         <td>{{displayList.launchDate}}</td>
